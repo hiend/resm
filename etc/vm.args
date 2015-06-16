@@ -1,0 +1,5 @@
+## Name of the node
+-name resm@127.0.0.1
+
+## Cookie for distributed erlang
+-setcookie 0x8c97vb876dshgf

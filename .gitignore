@@ -1,0 +1,9 @@
+ebin
+deps
+_rel
+.rebar
+.eunit
+*.plt
+erl_crash.dump
+dialyzer.log
+*.deb
