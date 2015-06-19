@@ -35,7 +35,7 @@ Production:
 
 Development:
 
-> make console-dev
+> make dev-rel console
 
 ### Go to [`http://localhost:8008/list`](http://localhost:8008/list) and check that works!
 Stop the running application by typing `halt().` into the REPL console.
@@ -83,7 +83,6 @@ RETURNS:
 
 <table width="100%" border="0" summary="list of modules">
 <tr><td><a href="http://github.com/hiend/resm/blob/master/doc/resm.md" class="module">resm</a></td></tr>
-<tr><td><a href="http://github.com/hiend/resm/blob/master/doc/resm_app.md" class="module">resm_app</a></td></tr>
 <tr><td><a href="http://github.com/hiend/resm/blob/master/doc/resm_manager.md" class="module">resm_manager</a></td></tr>
 <tr><td><a href="http://github.com/hiend/resm/blob/master/doc/resm_rest.md" class="module">resm_rest</a></td></tr>
 <tr><td><a href="http://github.com/hiend/resm/blob/master/doc/resm_sup.md" class="module">resm_sup</a></td></tr></table>

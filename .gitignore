@@ -1,9 +1,9 @@
+.erlang.mk*
 ebin
 deps
+log
+test/*.beam
 _rel
-.rebar
-.eunit
 *.plt
 erl_crash.dump
-dialyzer.log
 *.deb
