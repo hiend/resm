@@ -28,6 +28,7 @@ deb: rel
 	find $(REL) -type d -print0 | xargs -0 chmod 755
 	find $(REL) -type f -print0 | xargs -0 chmod 644
 	chmod -R +x $(REL)/bin
+	chmod -R +x $(REL)/*/bin
 	fpm -f -s dir -t deb -a native \
 		--version $(VSN) \
 		--name $(PROJECT) \
@@ -35,7 +36,6 @@ deb: rel
 		--url "http://github.com/hiend/resm" \
 		--license MIT \
 		--maintainer "Dmitry Averbakh <adm@ruhub.com>" \
-		--depends erlang-base \
 		--deb-pre-depends adduser \
 		--after-install deb/postinst \
 		--after-remove deb/postrm \
