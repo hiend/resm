@@ -1,10 +1,10 @@
 {application, resm,
  [
-  {description, "resm is a simple resource manager"},
+  {description, "resm is a simple resource manager"},
   {vsn, git},
-  {modules, []},
-  {registered, [resm_app, resm_sup, resm_manager, resm_rest]},
+  {modules, [resm, resm_sup, resm_manager, resm_rest]},
+  {registered, [resm]},
   {applications, [kernel, stdlib, sasl, compiler, syntax_tools, lager, cowboy, jiffy]},
-  {mod, {resm_app, []}},
+  {mod, {resm, []}},
   {env, []}
  ]}.
