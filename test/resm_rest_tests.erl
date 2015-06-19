@@ -5,14 +5,14 @@
 %%% resm rest api handler tests.
 %%% @end
 %%%---------------------------------------------------------------------------------------------------------------------
--module(rest_tests).
+-module(resm_rest_tests).
 -author("Dmitry Averbakh <adm@ruhub.com>").
 
 %% Includes
 -include_lib("eunit/include/eunit.hrl").
 
 %% apps for start
--define(APPS, [compiler, syntax_tools, sasl, lager, ranch, cowlib, cowboy, jiffy, resm, inets]).
+-define(APPS, [compiler, syntax_tools, goldrush, sasl, crypto, lager, ranch, cowlib, cowboy, jiffy, resm, inets]).
 
 %% test states
 -define(INITIAL_STATE, "{\"allocated\":{},\"deallocated\":[\"r1\",\"r2\",\"r3\",\"r4\",\"r5\",\"r6\",\"r7\",\"r8\",\"r9\",\"r10\"]}").

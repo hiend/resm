@@ -1,7 +1,7 @@
 {application, resm,
  [
   {description, "resm is a simple resource manager"},
-  {vsn, git},
+  {vsn, "1.0.1"},
   {modules, [resm, resm_sup, resm_manager, resm_rest]},
   {registered, [resm]},
   {applications, [kernel, stdlib, sasl, compiler, syntax_tools, lager, cowboy, jiffy]},

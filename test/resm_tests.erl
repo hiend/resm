@@ -12,7 +12,7 @@
 -include_lib("eunit/include/eunit.hrl").
 
 %% apps for start
--define(APPS, [compiler, syntax_tools, sasl, lager, ranch, cowlib, cowboy, jiffy, resm]).
+-define(APPS, [compiler, syntax_tools, goldrush, crypto, sasl, lager, ranch, cowlib, cowboy, jiffy, resm]).
 
 %% test states
 -define(INITIAL_STATE, {ok,{[],[r1,r2,r3,r4,r5,r6,r7,r8,r9,r10]}}).
