@@ -19,6 +19,8 @@ Resource allocating by username and associated with him up to deallocation. List
 
 ### Installation
 
+#### From sources
+
 Clone the repository:
 
 > git clone git@github.com:hiend/resm.git
@@ -36,6 +38,30 @@ Production:
 Development:
 
 > make dev-rel console
+
+#### From deb package (debian based linux, e.g. ubuntu)
+
+Download:
+
+> wget https://github.com/hiend/resm/releases/download/1.0.1/resm_1.0.1_amd64.deb
+
+Install:
+
+> sudo dpkg -i resm_1.0.1_amd64.deb
+
+Run:
+
+> sudo service resm start
+
+#### From docker image
+
+Pull image:
+
+> docker pull hiend/resm:1.0.1
+
+Run:
+
+> docker run -dit -p 8008:8008 hiend/resm:1.0.1
 
 ### Go to [`http://localhost:8008/list`](http://localhost:8008/list) and check that works!
 Stop the running application by typing `halt().` into the REPL console.

@@ -7,8 +7,10 @@
 
 
 
-resm common tools module.
+resm application module.
 Copyright (c) 2015, Dmitry Averbakh
+
+__Behaviours:__ [`application`](application.md).
 
 __Authors:__ Dmitry Averbakh ([`adm@ruhub.com`](mailto:adm@ruhub.com)).
 <a name="index"></a>

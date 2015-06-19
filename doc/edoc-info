@@ -1,4 +1,4 @@
 %% encoding: UTF-8
 {application,resm}.
 {packages,[]}.
-{modules,[resm,resm_app,resm_manager,resm_rest,resm_sup]}.
+{modules,[resm,resm_manager,resm_rest,resm_sup]}.
