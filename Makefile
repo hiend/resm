@@ -81,7 +81,7 @@ docs: $(REBAR)
 	@rm -rf README.md doc/edoc-info doc/*.md
 	$(REBAR) --quiet get-deps compile doc
 
-# need fpm
+# need fpm (see https://github.com/jordansissel/fpm)
 deb: release
 	fpm -f -s dir -t deb -a native \
 		--version $(VSN) \
@@ -103,8 +103,8 @@ deb: release
 		etc/vm.args=/etc/$(PROJECT)/vm.args \
 		deb/init=/etc/init.d/$(PROJECT)
 
-# need lintian
-lint:
+# need lintian ($ sudo apt-get install lintian)
+lint: deb
 	lintian $(PROJECT)_$(VSN)_amd64.deb
 
 .PHONY: deps test deb
